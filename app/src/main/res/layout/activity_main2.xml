@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.lsk.waytechweek1.Main2Activity"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="구르미 날씨"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:background="#02cdd1"
+        android:paddingTop="5dp" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/setting_btn"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:src="@drawable/setting_btn"
+        android:background="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/setting_btn"
+        android:layout_toStartOf="@+id/setting_btn"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/frameLayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/recom_background"
+        >
+
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/bikeVIew"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/recom_bike"
+            />
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/recom_camp"
+            />
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/recom_fishing"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/bottom_background"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="left|top"
+            android:src="@drawable/speechbubble2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView6"
+            android:layout_gravity="left|bottom"
+            android:src="@drawable/angry" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today&apos;s Activity"
+        android:id="@+id/textView4"
+        android:textColor="#45c1ff"
+        android:layout_above="@+id/frameLayout"
+        android:layout_alignStart="@+id/frameLayout"
+        android:layout_marginLeft="5dp" />
+</RelativeLayout>

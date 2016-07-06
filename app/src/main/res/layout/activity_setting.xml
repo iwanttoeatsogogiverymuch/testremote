@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/mintBackround"
+    android:paddingTop="20dp"
+    tools:context="com.example.lsk.waytechweek1.SettingActivity">
+
+    <TextView
+        android:id="@+id/setting_activity_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBackground"
+        android:paddingTop="5dp"
+        android:text="@string/settingactivity_title"
+        android:textAlignment="center"
+        android:textColor="@color/mintBackround"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/setting_activity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_activity_title_text_view"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="성별을 선택해 주세요!"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ToggleButton
+
+        android:id="@+id/gentleman_Btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/girl_Btn"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_activity_label"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/gentleman_selector"
+        android:checked="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <ToggleButton
+        android:id="@+id/girl_Btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/setting_activity_label"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/girl_selector"
+        android:checked="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <LinearLayout
+       android:layout_centerInParent="true"
+        android:id="@+id/setting_activity_switch_lienar_layout"
+        android:layout_below="@+id/girl_Btn"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp">
+
+        <Switch
+            android:id="@+id/setting_activity_switch_figure"
+            android:text="화씨로 표현"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:track="@drawable/onofflast"
+            android:typeface="sans"
+            android:paddingStart="20dp"
+            android:switchPadding="34dp"
+            android:textSize="30dp" />
+        <Switch
+            android:id="@+id/setting_activity_switch_fasion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:track="@drawable/onofflast"
+            android:paddingStart="20dp"
+            android:switchPadding="10dp"
+            android:text="패션기능 추가"
+            android:checked="false"
+            android:textSize="30dp"
+            android:trackTintMode="screen"
+            android:trackTint="#003a54" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting_activity_theme_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/girl_Btn"
+        android:layout_alignStart="@+id/gentleman_Btn"
+        android:layout_below="@+id/setting_activity_switch_lienar_layout"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shortbtn"
+        android:text="테마 구경하러 가기" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="15dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lsk.waytechweek1.MainActivity">
+
+    <TextView
+        android:id="@+id/mainactivitytitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mainactivity_title"
+        android:textColor="#4ed6fc"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/settingimagebutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/mainactivitytitleTextView"
+        android:background="@color/colorBackground"
+        android:src="@drawable/setting_btn"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/settingimagebutton"
+        android:background="@drawable/switcher_background"
+        android:textColor="#000000"
+        android:layout_below="@+id/mainactivitytitleTextView"
+        android:layout_above="@+id/textView"
+        android:paddingStart="5dp"
+        android:padding="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/settingimagebutton"
+        android:layout_margin="10dp"
+        android:src="@drawable/weather_background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:src="@drawable/weather_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toStartOf="@+id/editText"
+        android:paddingTop="10dp"
+        android:text="어제"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:paddingTop="10dp"
+        android:text="오늘"
+
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2">
+
+        <ImageView
+            android:id="@+id/avator_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avata_background" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/speechbubble1"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:id="@+id/cloudImageVIew"
+            android:layout_width="162dp"
+            android:layout_height="174dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/cloude_button" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

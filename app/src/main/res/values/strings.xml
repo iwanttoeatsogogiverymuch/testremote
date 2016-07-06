@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">WayTechweek1</string>
+    <string name="mainactivity_title">Weather Banner</string>
+    <string name="main2activity_title">구르미 날씨</string>
+    <string name="settingactivity_title">Setting</string>
+
+</resources>
